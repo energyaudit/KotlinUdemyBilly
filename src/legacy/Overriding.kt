@@ -33,14 +33,14 @@ fun main(args:Array<String>){
 
     var op=Operations1()
     var sum=op.sum(10,15)
-    println("sum:"+ sum)
+    println("legacy.getSum:"+ sum)
     var div= op.div(12,11)
     println("div:"+ div)
 
     // second
     var op2=MultiOperations1()
     sum=op2.sum(10,15)
-    println("sum:"+ sum)
+    println("legacy.getSum:"+ sum)
     div= op2.div(12,11)
     println("div:"+ div)
 

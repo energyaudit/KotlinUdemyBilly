@@ -8,7 +8,7 @@ fun main(){
     val number2  = readLine()!!.toDouble()
 
     val sum = number1 + number2
-    println("sum: $sum")
+    println("legacy.getSum: $sum")
 
     val sub =  number1 - number2
     println("sub: $sub")
