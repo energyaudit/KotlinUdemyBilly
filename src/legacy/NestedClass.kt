@@ -1,7 +1,7 @@
 package legacy
 class Outer {
 
-    private  val name:String?=null
+    private  val name:String?="InnerClassName"
 
    inner class Nested {
         
@@ -16,8 +16,9 @@ class Outer {
 fun  main(args:Array<String>){
 
    var outer=Outer()
-    //var nested=Outer.Nested()
-   // nested.Show()
+
+    var nested=outer.Nested()
+    nested.Show()
 
 
 }

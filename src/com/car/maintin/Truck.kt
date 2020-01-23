@@ -22,14 +22,16 @@ class Truck:CarOptions{
         return this.getPrice()!!- (this.milesDrive!!.toDouble()*20)
     }
 
-
+    fun getCarPriceWrapper():Double{
+        return super.getCarPrice()
+    }
 }
 
+//fun Truck.getCarPriceWrapper():Double{//if u want to add method outside class then use extension,but extension
+//    return this.getCarPrice()//cannot access super as the method inside class
+//}
 
 
-fun  Truck.getCarPriceWrapper():Double{
-    return this.getCarPrice()
-}
 
 
 fun main() {
@@ -41,7 +43,7 @@ fun main() {
     println(truck1.owner)
     //println(truck1.price)
     println(truck1.getCarPrice())
-    println(truck1.getCarPriceWrapper())
+    println("public method use super to call parent method: "+truck1.getCarPriceWrapper())
 
     val truck2 = Truck("Toyota",2019,39000.0,10,"Garbage")
     println(truck2.type)

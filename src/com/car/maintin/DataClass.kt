@@ -11,7 +11,7 @@ fun main() {
     val person = Person("Hussein", 30,"Male")
     println("person.name: ${person.name}")
     println("person.age: ${person.age}")
-    println("person.gender: ${person.gender}")
+   println("person.gender: ${person.gender}")
 
 
 }

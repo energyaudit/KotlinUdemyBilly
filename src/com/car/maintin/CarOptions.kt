@@ -42,12 +42,12 @@ fun main() {
     car1.type="KIA"
     println(car1.type)
     println(car1.owner)
-    println(car1.getCarPrice())
+    println("because price is private so it can only access by public method get:   "+car1.getCarPrice())
 
     val car2 = CarOptions("Toyota",2019,39000.0,10)
     println(car2.type)
     println(car2.owner)
-    println(car2.getCarPrice())
+    println("because price is private so it can only access by public method get:   "+car2.getCarPrice())
 
 
 

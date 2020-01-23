@@ -24,5 +24,5 @@ fun main() {
         println(item)
     }
 
-    println("Max: ${listOfElements.findMax()}")
+    println("Extension example ArrayList Max: ${listOfElements.findMax()}")
 }

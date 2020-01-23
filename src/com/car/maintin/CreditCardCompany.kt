@@ -36,6 +36,9 @@ class Visa(override val cardNumber: String) :CreditCard{
     }
 
 }
+//class PayPal(override val cardNumber: String): CreditCard by client{
+//class PayPal(client: CreditCard): CreditCard by client{
+
 class PayPal(client:CreditCard): CreditCard by client{
 
     fun print(){

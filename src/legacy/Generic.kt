@@ -13,8 +13,11 @@ fun <T> display(process:T){
 
 fun main(args:Array<String>){
 
+   // var userAdmin =UserAdmins<String>("hussein")
     var userAdmin =UserAdmins("hussein")
+   // var userAdmin2 =UserAdmins<int>(1234)
     var userAdmin2 =UserAdmins(1234)
+   // var userAdmin3 =UserAdmins<double>(1234.5)
     var userAdmin3 =UserAdmins(1234.5)
 
     display(22)
